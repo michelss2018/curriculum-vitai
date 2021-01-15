@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+/* Globais */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    /*transition: 0.2s;*/
+}
+
+@font-face{
+    font-family: montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf)
+}
+
+/* Configurações da div linha e div triângulo */
+div.linha{
+    width: 70%;
+    height: 5px;
+    margin: auto;
+    background-image: linear-gradient(to left, rgb(95, 95, 95), rgb(255, 102, 0), rgba(55, 92, 233), rgba(255, 102, 0), rgba(95, 95, 95, 1));
+}
+
+div.triangulo{
+    width: 0;
+    height: 0;
+    border: 20px solid;
+    margin: auto auto auto 47.5%;
+    border-color: rgba(55, 92, 233) transparent  transparent;
+}
+
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header div#topoCabecalho {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header div#topoCabecalho div.img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header div#topoCabecalho div.img img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header div#topoCabecalho #img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -0.5%;
+}
+
+section#menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: auto;
+    top: 35%;
+    left: auto;
+    right: auto;
+}
+
+section#menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: auto;
+    margin: auto;
+    list-style: none;
+}
+
+section#menu ul li{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+section#menu ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+section#menu ul li a:hover{
+    color: rgb(185, 185, 185);
+}
+
+header div#informacoes{
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 88%;
+    height: auto;
+    margin: 2% auto;
+    padding: 1%;
+    border-radius: 500px;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+header div#informacoes div.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+header div#informacoes div.texto{
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+header div#informacoes img{
+    width: 90%;
+    height: auto;
+    float: left;
+    margin: auto auto auto 2%;
+    border-radius: 100%;
+    border: 5px solid rgba(255, 255, 255, 1);
+}
+
+header div#informacoes h1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 3em;
+}
+
+header div#informacoes p{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+header div#informacoes a{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 1.5em;
+    color: rgb(0, 105, 243);
+    text-decoration: none;
+}
+
+header div#informacoes a:hover{
+    color: rgb(0, 49, 243);
+}
+
+/* .......................................................... */
+main{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+main h2{
+    width: 90%;
+    height: auto;
+    margin: 5% auto 2% auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+main section{
+    margin-top: 7%;
+}
+
+/* .......................................................... */
+main section#redesSociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+}
+
+main section#redesSociais a{
+    margin: auto;
+}
+
+main section#redesSociais img{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+main section#redesSociais img:hover{
+    background-color: rgb(55, 92, 233);
+}
+
+/* .......................................................... */
+main section#formacao{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+main section#formacao div.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: auto;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+main section#formacao div.container div{
+    width: 45%;
+    height: auto;
+    margin: auto;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+main section#formacao div.container div div{
+    border: none;
+}
+
+main section#formacao div.container div img{
+    width: 40%;
+}
+
+main section#formacao div.container div.administracao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+}
+
+main section#formacao div.container div.administracao div.texto{
+    text-align: right;
+}
+
+main section#formacao div.container div.sistemas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    padding-right: 2%;
+}
+
+main section#formacao div.container button{
+    width: 220px;
+    height: 40px;
+    margin-top: 4%;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(239, 132, 47);
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+main section#formacao div.container button:hover{
+    background-color: rgba(55, 92, 233);
+}
+
+/* .......................................................... */
+main section#experiencias{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+main article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 87%;
+    height: auto;
+    margin: 4% auto;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+}
+
+main article div{
+    margin: auto;
+}
+
+main article div.imgEmpresas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+main article div.imgEmpresas img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+main article div.texto{
+    width: 90%;
+    height: auto;
+    margin: auto 4% auto 4%;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+main article div.texto div.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+main article div.texto div.container h3{
+    margin: auto auto auto 0;
+}
+
+/* ......................................................... */
+aside{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+aside h2{
+    width: 100%;
+    height: auto;
+    margin: 10% auto 2% auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+aside div.containerCursos{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+aside div.containerCursos div.buttons{
+    display: block;
+    float: left;
+    width: 33.333%;
+    height: auto;
+    margin: auto auto 5% auto;
+}
+
+aside div.containerCursos div.buttons button{
+    width: 100%;
+    height: 40px;
+    margin: 1% auto;
+    font-size: 1em;
+    font-weight: 900;
+    background-color: transparent;
+    color: rgb(239, 132, 47);
+    border: none;
+    cursor: pointer;
+}
+
+aside div.containerConhecimentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+}
+
+aside div.containerConhecimentos div.box1{
+    display: block;
+    width: 50%;
+    height: auto;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(239, 132, 47);
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+aside div.containerConhecimentos div.box1 div{
+    width: 100%;
+    height: 40px;
+}
+
+aside div.containerConhecimentos div.box2{
+    display: block;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+aside div.containerConhecimentos div.box2 div{
+    text-align: left;
+    width: 100%;
+    height: 40px;
+}
+
+aside div.containerConhecimentos div.box2 div span{
+    display: block;
+    float: left;
+    width: 18px;
+    height: 10px;
+    margin: 2% auto auto 8px;
+    background-color: rgba(55, 92, 233);
+    border-radius: 50px;
+}
+
+/* ................................................................... */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 100%;
+    height: 200px;
+    font-size: 15pt;
+}
